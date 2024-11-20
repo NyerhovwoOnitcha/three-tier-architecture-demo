@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shipping
+  namespace: {{ .Values.namespace }}
   labels:
     service: shipping
 spec:

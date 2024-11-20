@@ -4,6 +4,7 @@ metadata:
   labels:
     service: redis
   name: redis
+  namespace: {{ .Values.namespace }}
 spec:
   ports:
   - name: redis

@@ -4,6 +4,7 @@ metadata:
   labels:
     service: mongodb
   name: mongodb
+  namespace: {{ .Values.namespace }}
 spec:
   ports:
   - name: mongo
